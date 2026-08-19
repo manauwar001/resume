@@ -1,44 +1,1233 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Md Manauwar Ansari — IT Support | BCA Graduate | MCA Student">
-<title>Md Manauwar Ansari | IT Support</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Md Manauwar Ansari | IT Support | Networking | Web Development</title>
+
+<meta name="description"
+content="Md Manauwar Ansari - BCA Graduate and MCA Student with practical experience in IT Support, Networking and Web Development.">
+
 <style>
-:root{--n:#17324d;--b:#2f6f9f;--s:#edf4f8;--l:#dbe5ec;--m:#5f6b76}*{box-sizing:border-box}
-body{margin:0;font-family:Segoe UI,Arial,sans-serif;color:#1d2630;background:#f4f7fa;line-height:1.55}
-a{color:inherit}.wrap{max-width:1050px;margin:auto;padding:0 22px}
-.hero{background:linear-gradient(135deg,var(--n),var(--b));color:#fff;padding:48px 0}
-.grid{display:grid;grid-template-columns:1fr 180px;gap:32px;align-items:center}
-h1{font-size:clamp(34px,6vw,56px);line-height:1.05;margin:0 0 8px}.tag{font-weight:700;font-size:18px;color:#dcefff;margin-bottom:18px}
-.contact{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px}.contact a{text-decoration:none;border-bottom:1px solid #ffffff66}
-.photo{width:180px;height:215px;object-fit:cover;border-radius:14px;border:4px solid #fff;box-shadow:0 15px 35px #0004}
-.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{padding:10px 16px;border-radius:9px;text-decoration:none;font-weight:700;border:1px solid #ffffff88}
-.primary{background:#fff;color:var(--n)}.secondary{color:#fff}
-main{padding:32px 0 55px}.card{background:#fff;border:1px solid var(--l);border-radius:15px;padding:25px;margin-bottom:18px;box-shadow:0 8px 25px #17324d0d}
-h2{font-size:19px;color:var(--n);margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--l)}
-.summary{font-size:16px}.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.skill{background:var(--s);padding:11px 13px;border-radius:8px;font-weight:700;color:var(--n);font-size:14px}
-.edu{padding:13px 0;border-bottom:1px dashed #ccd8e0}.edu:last-child{border-bottom:0}.uni{color:var(--n);font-weight:800}.meta{color:var(--m);font-size:14px}
-li{margin:7px 0}.role{font-size:17px;font-weight:800;color:var(--n)}footer{text-align:center;color:var(--m);padding:22px}
-@media(max-width:700px){.grid{grid-template-columns:1fr;text-align:center}.photo{margin:auto}.contact,.btns{justify-content:center}.skills{grid-template-columns:1fr}.card{padding:20px}}
-</style></head>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+    color:#1e293b;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(135deg,#08213d,#164d78);
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 18px rgba(0,0,0,.18);
+}
+
+.navbar{
+    max-width:1150px;
+    margin:auto;
+    padding:15px 25px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:bold;
+    color:white;
+}
+
+.logo span{
+    color:#ffd400;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd400;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    background:linear-gradient(135deg,#08213d,#1a527c);
+    color:white;
+    padding:80px 20px;
+}
+
+.hero-container{
+    max-width:1100px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 280px;
+    gap:50px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:48px;
+    line-height:1.15;
+    margin-bottom:12px;
+}
+
+.hero h1 span{
+    color:#ffd400;
+}
+
+.hero h2{
+    font-size:23px;
+    color:#dce9f5;
+    margin-bottom:18px;
+}
+
+.hero p{
+    max-width:700px;
+    color:#d7e3ef;
+    font-size:17px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:13px;
+    margin-top:28px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 21px;
+    border-radius:25px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-yellow{
+    background:#ffd400;
+    color:#08213d;
+}
+
+.btn-blue{
+    background:#1976b8;
+    color:white;
+}
+
+.btn-green{
+    background:#20c968;
+    color:white;
+}
+
+
+/* =========================
+   PROFILE PHOTO
+========================= */
+
+.profile-photo{
+    width:240px;
+    height:290px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    border:6px solid rgba(255,255,255,.9);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+
+    display:block;
+    margin:auto;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 25px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:38px;
+}
+
+.section-title h2{
+    color:#123e60;
+    font-size:34px;
+}
+
+.section-title p{
+    color:#687789;
+    margin-top:6px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-box{
+    background:white;
+
+    border-left:7px solid #ffd400;
+
+    padding:32px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.07);
+}
+
+.about-box p{
+    color:#536274;
+    font-size:17px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.skill-card{
+    background:white;
+    padding:25px;
+
+    border-radius:16px;
+
+    box-shadow:0 7px 22px rgba(0,0,0,.07);
+
+    border-top:5px solid #ffd400;
+}
+
+.skill-card h3{
+    color:#123e60;
+    margin-bottom:10px;
+}
+
+.skill-card p{
+    color:#637285;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-card{
+    background:white;
+
+    padding:28px;
+
+    border-radius:17px;
+
+    box-shadow:0 7px 22px rgba(0,0,0,.07);
+
+    margin-bottom:18px;
+}
+
+.education-card h3{
+    color:#123e60;
+}
+
+.education-card span{
+    color:#687789;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.project-card{
+    background:white;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.project-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 14px 30px rgba(0,0,0,.13);
+}
+
+.project-icon{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.project-card h3{
+    color:#123e60;
+    font-size:21px;
+    margin-bottom:10px;
+}
+
+.project-card .tech{
+    color:#1769aa;
+    font-weight:bold;
+    font-size:13px;
+    margin-bottom:12px;
+}
+
+.project-card p{
+    color:#657386;
+    font-size:15px;
+    margin-bottom:18px;
+}
+
+.project-buttons{
+    margin-top:auto;
+
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.project-btn{
+    padding:9px 13px;
+
+    border-radius:20px;
+
+    background:#123e60;
+    color:white;
+
+    font-size:13px;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.project-btn:hover{
+    background:#ffd400;
+    color:#123e60;
+}
+
+
+/* =========================
+   INTERNSHIP
+========================= */
+
+.experience-box{
+    background:#123e60;
+
+    color:white;
+
+    padding:32px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.experience-box h3{
+    color:#ffd400;
+    margin-bottom:7px;
+}
+
+.experience-box p{
+    color:#d9e6f2;
+    margin-bottom:20px;
+}
+
+.experience-box p:last-child{
+    margin-bottom:0;
+}
+
+
+/* =========================
+   STRENGTHS
+========================= */
+
+.strength-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.strength-card{
+    background:white;
+
+    padding:23px 15px;
+
+    text-align:center;
+
+    border-radius:16px;
+
+    box-shadow:0 7px 20px rgba(0,0,0,.07);
+}
+
+.strength-card .icon{
+    font-size:35px;
+}
+
+.strength-card h3{
+    color:#123e60;
+    font-size:17px;
+    margin-top:8px;
+}
+
+.strength-card p{
+    color:#687789;
+    font-size:14px;
+    margin-top:6px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box{
+    background:white;
+
+    border-radius:20px;
+
+    padding:38px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    text-align:center;
+}
+
+.contact-box h2{
+    color:#123e60;
+    margin-bottom:12px;
+}
+
+.contact-box p{
+    color:#667487;
+    margin-bottom:22px;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#06172d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:32px 20px;
+}
+
+footer .name{
+    color:#ffd400;
+    font-weight:bold;
+}
+
+footer .developer{
+    margin-top:10px;
+    color:#b9c8d8;
+    font-size:14px;
+}
+
+footer .developer strong{
+    color:#ffd400;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    nav{
+        display:none;
+    }
+
+    .navbar{
+        justify-content:center;
+    }
+
+    .hero{
+        padding:60px 20px;
+    }
+
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:19px;
+    }
+
+    .hero p{
+        margin:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .profile-photo{
+        width:190px;
+        height:230px;
+    }
+
+    section{
+        padding:55px 20px;
+    }
+
+    .skills-grid,
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+
+    .strength-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .section-title h2{
+        font-size:29px;
+    }
+
+    .strength-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-box,
+    .contact-box,
+    .experience-box{
+        padding:25px 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
 <body>
-<header class="hero"><div class="wrap grid"><div>
-<h1>Md Manauwar Ansari</h1><div class="tag">IT SUPPORT | BCA GRADUATE | MCA STUDENT</div>
-<div class="contact"><span>📍 Patna, Bihar, India</span><span>📞 <a href="tel:+917004066121">7004066121</a></span>
-<span>✉️ <a href="mailto:manauwaransari6730@gmail.com">manauwaransari6730@gmail.com</a></span>
-<span>in <a href="https://www.linkedin.com/in/md-manauwar-ansari-453343264/" target="_blank">LinkedIn Profile</a></span></div>
-<div class="btns"><a class="btn primary" href="assets/Md_Manauwar_Ansari_IT_Support_CV.pdf" target="_blank">View / Download CV</a><a class="btn secondary" href="#contact">Contact Me</a></div>
-</div><img class="photo" src="assets/profile-photo.png" alt="Md Manauwar Ansari"></div></header>
-<main class="wrap">
-<section class="card"><h2>Professional Summary</h2><p class="summary">BCA graduate and current MCA student with a strong interest in IT Support and technical operations. Knowledge of computer troubleshooting, basic networking, Microsoft Office and general computer systems. Motivated fresher seeking an entry-level IT Support opportunity to provide day-to-day technical assistance, troubleshoot user issues, maintain workplace technology and grow professionally.</p></section>
-<section class="card"><h2>Core Skills</h2><div class="skills">
-<div class="skill">IT Support & Troubleshooting</div><div class="skill">Microsoft Office</div><div class="skill">Basic Networking</div>
-<div class="skill">Computer Hardware & Software</div><div class="skill">System Maintenance</div><div class="skill">User Support</div>
-<div class="skill">Problem Solving</div><div class="skill">Documentation & Reporting</div><div class="skill">Communication & Teamwork</div></div></section>
-<section class="card"><h2>Education</h2>
-<div class="edu"><strong>Master of Computer Applications (MCA) — Pursuing</strong><br><span class="uni">Indira Gandhi National Open University (IGNOU)</span> <span class="meta">| Admitted 2026</span></div>
-<div class="edu"><strong>Bachelor of Computer Applications (BCA)</strong><br><span class="uni">Amity University Patna</span> <span class="meta">| Graduated July 2025</span></div></section>
-<section class="card"><h2>Technical Knowledge</h2><ul><li>Computer troubleshooting, Windows/software support and basic hardware concepts.</li><li>Networking fundamentals and basic connectivity troubleshooting.</li><li>Microsoft Office applications including Word, Excel and PowerPoint.</li><li>Basic programming knowledge: C, Java and Kotlin; web and database fundamentals.</li><li>Basic knowledge of SQL, Android development, data technologies and cybersecurity concepts.</li></ul></section>
-<section class="card"><h2>Project / Internship Exposure</h2><ul><li><strong>Blockchain in Cyber Security:</strong> Exposure to blockchain concepts and their applications in cybersecurity.</li><li><strong>Graphic Designing:</strong> Practical exposure to digital design and visual content creation.</li><li><strong>Jeans Junction:</strong> E-commerce application concept using Kotlin, focused on product browsing and user-oriented interface design.</li></ul></section>
-<section class="card"><h2>Strengths</h2><ul><li>Quick learner with willingness to develop professionally in the IT field.</li><li>Good communication and teamwork skills.</li><li>Organized approach to tasks with a practical problem-solving mindset.</li><li>Willingness to support users and learn new workplace technologies.</li></ul></section>
-<section class="card" id="contact"><h2>Target Role</h2><div class="role">IT Support | IT Support Technician | Helpdesk Support | Computer Support</div><p>Preferred location: <strong>Jeddah, Saudi Arabia</strong> | Experience level: <strong>Fresh Graduate</strong></p><p>📧 <a href="mailto:manauwaransari6730@gmail.com">manauwaransari6730@gmail.com</a> | 📞 <a href="tel:+917004066121">7004066121</a></p></section>
-</main><footer>© 2026 Md Manauwar Ansari • IT Support Portfolio</footer></body></html>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
+<a href="#home" class="logo">
+Md <span>Manauwar</span>
+</a>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-container">
+
+<div>
+
+<h1>
+MD <span>MANAUWAR ANSARI</span>
+</h1>
+
+<h2>
+IT Support | Networking | Web Development
+</h2>
+
+<p>
+
+BCA Graduate and MCA Student with practical
+experience in IT support, networking fundamentals,
+responsive web development and troubleshooting.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn btn-yellow">
+🚀 View Projects
+</a>
+
+<a href="https://github.com/manauwar001"
+target="_blank"
+class="btn btn-blue">
+
+💻 GitHub
+
+</a>
+
+<a href="https://www.linkedin.com/in/md-manauwar-ansari-453343264/"
+target="_blank"
+class="btn btn-blue">
+
+🔗 LinkedIn
+
+</a>
+
+</div>
+
+</div>
+
+
+<img
+src="profile.jpg"
+alt="Md Manauwar Ansari"
+class="profile-photo"
+>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="section-title">
+
+<h2>👨‍💻 About Me</h2>
+
+<p>Professional profile</p>
+
+</div>
+
+
+<div class="about-box">
+
+<p>
+
+I am a BCA graduate and MCA student with a strong interest
+in IT Support, Networking and Web Development.
+
+I have practical experience building responsive websites,
+working with basic networking concepts, troubleshooting
+technical issues and deploying projects using GitHub Pages.
+
+I enjoy learning new technologies and creating practical,
+user-focused solutions that can be useful in real-world
+environments.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<div class="section-title">
+
+<h2>🛠️ Technical Skills</h2>
+
+<p>Technologies and areas I work with</p>
+
+</div>
+
+
+<div class="skills-grid">
+
+
+<div class="skill-card">
+
+<h3>💻 IT Support</h3>
+
+<p>
+Computer troubleshooting, hardware and software support,
+Microsoft Office, user support and technical documentation.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<h3>🌐 Networking</h3>
+
+<p>
+Networking fundamentals, connectivity troubleshooting,
+basic network monitoring and technical problem solving.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<h3>🌍 Web Development</h3>
+
+<p>
+HTML5, CSS3, JavaScript, responsive web design,
+GitHub and GitHub Pages.
+</p>
+
+</div>
+
+
+<div class="skill-card">
+
+<h3>📊 Programming & Data</h3>
+
+<p>
+C, Java, Kotlin, SQL and basic database fundamentals.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+<div class="section-title">
+
+<h2>🎓 Education</h2>
+
+<p>Academic background</p>
+
+</div>
+
+
+<div class="education-card">
+
+<h3>
+Master of Computer Applications (MCA)
+</h3>
+
+<span>
+Currently Pursuing
+</span>
+
+</div>
+
+
+<div class="education-card">
+
+<h3>
+Bachelor of Computer Applications (BCA)
+</h3>
+
+<span>
+Amity University Patna | Graduated July 2025
+</span>
+
+</div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+<div class="section-title">
+
+<h2>🚀 Projects</h2>
+
+<p>Real-world and practical projects</p>
+
+</div>
+
+
+<div class="projects-grid">
+
+
+<!-- NETWATCH -->
+
+<div class="project-card">
+
+<div class="project-icon">
+📡
+</div>
+
+<h3>
+NetWatch — Network Monitoring Dashboard
+</h3>
+
+<div class="tech">
+HTML5 • CSS3 • JavaScript • GitHub Pages
+</div>
+
+<p>
+
+Responsive network monitoring dashboard designed
+to visualize network/device health, online and offline
+status, connectivity and performance metrics.
+
+</p>
+
+<div class="project-buttons">
+
+<a
+href="https://manauwar001.github.io/NetWatch-Network-Monitoring-Dashboard/"
+target="_blank"
+class="project-btn">
+
+🌐 Live Demo
+
+</a>
+
+<a
+href="https://github.com/manauwar001/NetWatch-Network-Monitoring-Dashboard"
+target="_blank"
+class="project-btn">
+
+💻 GitHub
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- MUKHTAR -->
+
+<div class="project-card">
+
+<div class="project-icon">
+⚡
+</div>
+
+<h3>
+Mukhtar Auto Electrician — Business Website
+</h3>
+
+<div class="tech">
+HTML5 • CSS3 • JavaScript • Responsive Design
+</div>
+
+<p>
+
+Responsive real-world business website for an
+auto and tractor electrical repair and spare parts
+shop. Includes WhatsApp inquiries, calling,
+Google Maps directions and service showcase.
+
+</p>
+
+<div class="project-buttons">
+
+<a
+href="https://manauwar001.github.io/Mukhtar-Auto-Electrician-Shop/"
+target="_blank"
+class="project-btn">
+
+🌐 Live Demo
+
+</a>
+
+<a
+href="https://github.com/manauwar001/Mukhtar-Auto-Electrician-Shop"
+target="_blank"
+class="project-btn">
+
+💻 GitHub
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- JEANS JUNCTION -->
+
+<div class="project-card">
+
+<div class="project-icon">
+🛒
+</div>
+
+<h3>
+Jeans Junction — E-commerce Application
+</h3>
+
+<div class="tech">
+Kotlin • Android • UI/UX
+</div>
+
+<p>
+
+E-commerce application concept focused on
+product browsing and a user-oriented shopping
+interface.
+
+</p>
+
+<div class="project-buttons">
+
+<a
+href="https://github.com/manauwar001"
+target="_blank"
+class="project-btn">
+
+💻 GitHub Profile
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= INTERNSHIP ================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>📚 Internship & Practical Exposure</h2>
+
+<p>Learning and practical experience</p>
+
+</div>
+
+
+<div class="experience-box">
+
+
+<h3>
+Blockchain in Cyber Security
+</h3>
+
+<p>
+
+Internship / Training — Exposure to blockchain
+concepts and their applications in cybersecurity.
+
+</p>
+
+
+<h3>
+Graphic Designing
+</h3>
+
+<p>
+
+Practical exposure to digital design and visual
+content creation.
+
+</p>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= STRENGTHS ================= -->
+
+<section>
+
+<div class="section-title">
+
+<h2>⭐ Core Strengths</h2>
+
+<p>Professional qualities</p>
+
+</div>
+
+
+<div class="strength-grid">
+
+
+<div class="strength-card">
+
+<div class="icon">
+🔧
+</div>
+
+<h3>
+Problem Solving
+</h3>
+
+<p>
+Practical troubleshooting mindset.
+</p>
+
+</div>
+
+
+<div class="strength-card">
+
+<div class="icon">
+🤝
+</div>
+
+<h3>
+Teamwork
+</h3>
+
+<p>
+Good communication and teamwork.
+</p>
+
+</div>
+
+
+<div class="strength-card">
+
+<div class="icon">
+📚
+</div>
+
+<h3>
+Quick Learner
+</h3>
+
+<p>
+Willingness to learn new technologies.
+</p>
+
+</div>
+
+
+<div class="strength-card">
+
+<div class="icon">
+📋
+</div>
+
+<h3>
+Organized
+</h3>
+
+<p>
+Technical tasks and documentation.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="section-title">
+
+<h2>📞 Contact Me</h2>
+
+<p>Let's connect professionally</p>
+
+</div>
+
+
+<div class="contact-box">
+
+<h2>
+Md Manauwar Ansari
+</h2>
+
+<p>
+
+📍 Patna, Bihar, India
+
+<br>
+
+📞 +91 70040 66121
+
+<br>
+
+📧 manauwaransari6730@gmail.com
+
+</p>
+
+
+<div class="contact-buttons">
+
+
+<a
+href="mailto:manauwaransari6730@gmail.com"
+class="btn btn-blue">
+
+📧 Email Me
+
+</a>
+
+
+<a
+href="tel:+917004066121"
+class="btn btn-yellow">
+
+📞 Call
+
+</a>
+
+
+<a
+href="https://wa.me/917004066121"
+target="_blank"
+class="btn btn-green">
+
+💬 WhatsApp
+
+</a>
+
+
+<a
+href="https://github.com/manauwar001"
+target="_blank"
+class="btn btn-blue">
+
+💻 GitHub
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026
+<span class="name">
+Md Manauwar Ansari
+</span>
+
+</p>
+
+<p>
+IT Support | Networking | Web Development
+</p>
+
+<p class="developer">
+
+Designed & Developed by
+<strong>
+Md Manauwar Ansari
+</strong>
+
+</p>
+
+</footer>
+
+
+</body>
+</html>

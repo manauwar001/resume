@@ -118,6 +118,11 @@ nav a:hover{
     font-size:17px;
 }
 
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
 .hero-buttons{
     display:flex;
     flex-wrap:wrap;
@@ -154,6 +159,73 @@ nav a:hover{
 
 
 /* =========================
+   CV BUTTONS
+   PROFILE PHOTO KE UPAR
+========================= */
+
+.cv-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+
+    margin-top:28px;
+    margin-bottom:22px;
+}
+
+.cv-btn{
+    display:inline-block;
+
+    padding:13px 22px;
+
+    border-radius:25px;
+
+    font-weight:bold;
+    font-size:15px;
+
+    transition:.3s;
+
+    min-width:145px;
+
+    text-align:center;
+}
+
+.cv-btn:hover{
+    transform:translateY(-3px);
+}
+
+
+/* VIEW CV - WHITE */
+
+.view-cv{
+    background:#ffffff;
+    color:#123e60;
+
+    border:2px solid #ffffff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+
+/* DOWNLOAD CV - BLUE */
+
+.download-cv{
+    background:#1976b8;
+    color:#ffffff;
+
+    border:2px solid #1976b8;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.download-cv:hover{
+    background:#0f65a0;
+    border-color:#0f65a0;
+}
+
+
+/* =========================
    PROFILE PHOTO
 ========================= */
 
@@ -170,6 +242,7 @@ nav a:hover{
     box-shadow:0 15px 35px rgba(0,0,0,.3);
 
     display:block;
+
     margin:auto;
 }
 
@@ -533,6 +606,10 @@ footer .developer strong{
         justify-content:center;
     }
 
+    .cv-buttons{
+        justify-content:center;
+    }
+
     .profile-photo{
         width:190px;
         height:230px;
@@ -553,6 +630,7 @@ footer .developer strong{
 
 }
 
+
 @media(max-width:500px){
 
     .hero h1{
@@ -571,6 +649,15 @@ footer .developer strong{
     .contact-box,
     .experience-box{
         padding:25px 20px;
+    }
+
+    .cv-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .cv-btn{
+        width:210px;
     }
 
 }
@@ -611,15 +698,18 @@ footer .developer strong{
 
 <div class="hero-container">
 
+
 <div>
 
 <h1>
 MD <span>MANAUWAR ANSARI</span>
 </h1>
 
+
 <h2>
 IT Support | Networking | Web Development
 </h2>
+
 
 <p>
 
@@ -629,13 +719,18 @@ responsive web development and troubleshooting.
 
 </p>
 
+
+<!-- ================= HERO BUTTONS ================= -->
+
 <div class="hero-buttons">
 
 <a href="#projects" class="btn btn-yellow">
 🚀 View Projects
 </a>
 
-<a href="https://github.com/manauwar001"
+
+<a
+href="https://github.com/manauwar001"
 target="_blank"
 class="btn btn-blue">
 
@@ -643,7 +738,9 @@ class="btn btn-blue">
 
 </a>
 
-<a href="https://www.linkedin.com/in/md-manauwar-ansari-453343264/"
+
+<a
+href="https://www.linkedin.com/in/md-manauwar-ansari-453343264/"
 target="_blank"
 class="btn btn-blue">
 
@@ -656,11 +753,46 @@ class="btn btn-blue">
 </div>
 
 
+<!-- ================= RIGHT SIDE PHOTO + CV ================= -->
+
+<div>
+
+
+<!-- CV BUTTONS ARE DIRECTLY ABOVE PHOTO -->
+
+<div class="cv-buttons">
+
+<a
+href="Md_Manauwar_Ansari_Resume.pdf"
+target="_blank"
+class="cv-btn view-cv">
+
+📄 View CV
+
+</a>
+
+
+<a
+href="Md_Manauwar_Ansari_Resume.pdf"
+download="Md_Manauwar_Ansari_Resume.pdf"
+class="cv-btn download-cv">
+
+⬇️ Download CV
+
+</a>
+
+</div>
+
+
 <img
 src="profile.jpg"
 alt="Md Manauwar Ansari"
 class="profile-photo"
 >
+
+
+</div>
+
 
 </div>
 
@@ -862,6 +994,7 @@ class="project-btn">
 
 </a>
 
+
 <a
 href="https://github.com/manauwar001/NetWatch-Network-Monitoring-Dashboard"
 target="_blank"
@@ -911,6 +1044,7 @@ class="project-btn">
 🌐 Live Demo
 
 </a>
+
 
 <a
 href="https://github.com/manauwar001/Mukhtar-Auto-Electrician-Shop"
@@ -1124,6 +1258,7 @@ Technical tasks and documentation.
 Md Manauwar Ansari
 </h2>
 
+
 <p>
 
 📍 Patna, Bihar, India
@@ -1200,9 +1335,11 @@ Md Manauwar Ansari
 
 </p>
 
+
 <p>
 IT Support | Networking | Web Development
 </p>
+
 
 <p class="developer">
 
